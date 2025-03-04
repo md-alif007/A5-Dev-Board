@@ -25,7 +25,7 @@ function getCurrentTime() {
     }
 
     if (minutes < 10) {
-        minutes = '0' + minutes
+        minutes = '0' + minutes;
     } else {
         minutes;
     }
@@ -36,6 +36,7 @@ function getCurrentTime() {
 for (let button of completedButton) {
     button.addEventListener('click', function () {
         button.disabled = true;
+        alert('Board updated successfully.')
         if (remainingCount > 0) {
             remainingCount = remainingCount - 1;
         }
@@ -54,9 +55,15 @@ for (let button of completedButton) {
         activitylogEntry.style.marginBottom = '0.5rem';
 
         activityLog.appendChild(activitylogEntry);
+
+        if (remainingCount === 0) {
+            alert("Congrats!!!You have completed all the current task.");
+        }
     })
 }
 
 clearHistoryBtn.addEventListener('click', function () {
     activityLog.innerText = '';
 })
+
+
