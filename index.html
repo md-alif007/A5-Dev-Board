@@ -36,7 +36,7 @@
                     </div>
                     <div class="flex items-center space-x-2 rounded-2xl p-2 bg-[#f4f7ff]">
                         <img src="./assets/checkbox.png" alt="checkbox">
-                        <h1 class="font-bold text-2xl">20</h1>
+                        <h1 id="task-completed" class="font-bold text-2xl">20</h1>
                     </div>
                 </div>
                 <div class="p-2 rounded-full bg-[#f4f7ff] ">
@@ -54,7 +54,7 @@
                     <img src="./assets/checkbox.png" alt="checkbox">
                     <div>
                         <h1>Task Assigned</h1>
-                        <p class="text-xl font-bold">06</p>
+                        <p id="task-remaining" class="text-xl font-bold">06</p>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="completed-btn" class="complete btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="completed-btn" class="complete btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                             SwiftPay
                         </p>
                         <h1 class="text-xl font-semibold">
-                            Optimize Home page 
+                            Optimize Home page
                         </h1>
                         <p class="bg-white p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping elements,
                             and ensure onClick works properly.
@@ -130,7 +130,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="completed-btn" class="complete btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="completed-btn" class="complete btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="completed-btn" class="complete btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="completed-btn" class="complete btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -209,18 +209,20 @@
                     <img src="./assets/activity.png" alt="">
                     <h1>Activity Log</h1>
                 </div>
-                <button class="align-middle btn btn-primary mt-5 w-1/2">Clear History</button>
+                <button id="clear-history-btn" class="align-middle btn btn-primary mt-5 w-1/2">Clear History</button>
             </div>
 
-            <div>
+            <section id="finished-task">
 
-            </div>
+            </section>
 
         </section>
     </main>
 
+    <script src="./utilities/utilities.js"></script>
     <script src="./script/clock.js"></script>
     <script src="./script/theme.js"></script>
+    <script src="./script/task.js"></script>
 </body>
 
 </html>
